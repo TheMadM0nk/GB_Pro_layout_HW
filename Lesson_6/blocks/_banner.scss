@@ -1,0 +1,43 @@
+.b-banner {
+
+    background: #F8F3F4;
+
+    &__container {
+
+        height: 148px;
+        display: flex;        
+    }
+
+    &__title {
+
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+
+        &_margin {
+
+            margin-top: 59px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+
+    .b-banner {
+
+        &__container {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+    
+            &_margin {
+    
+                margin-top: 50px;
+            }
+        }
+    }
+}
