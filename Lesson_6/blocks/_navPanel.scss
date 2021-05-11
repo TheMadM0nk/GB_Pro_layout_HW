@@ -1,0 +1,55 @@
+.b-navPanel {
+
+    box-sizing: border-box;
+    background-color: #222;
+
+    
+    &__container {
+
+        justify-content: space-between;
+        height: 75px;
+    }
+
+    &__btns {
+
+        &_padding {
+
+            padding-left: 33px;
+        }
+    }
+
+    &_a-center {
+
+        align-items: center;
+    }
+
+    &_dFlex {
+
+        display: flex;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .b-navPanel {
+
+        &__container {
+
+            padding: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 712px) {
+
+    .b-navPanel {
+        
+        &__btns {
+
+            .b-acc-btn, .b-cart-btn {
+
+                display: none;
+            }
+        }
+    }
+}
